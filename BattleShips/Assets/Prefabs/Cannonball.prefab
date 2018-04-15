@@ -39,7 +39,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1204185822424472}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
   m_LocalPosition: {x: 16, y: 151, z: 352}
   m_LocalScale: {x: 30, y: 30, z: 30}
   m_Children: []
@@ -286,6 +286,8 @@ MonoBehaviour:
   speed: 500
   bounceSound: {fileID: 8300000, guid: 3ea7bc16de239b64786b0636fdf34aa3, type: 3}
   bounceSource: {fileID: 82272316169756164}
+  dir: {x: -0.5, y: 0, z: 1}
+  reflectDir: {x: 0, y: 0, z: 0}
 --- !u!135 &135742407109257078
 SphereCollider:
   m_ObjectHideFlags: 1

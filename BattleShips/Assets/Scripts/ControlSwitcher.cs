@@ -11,7 +11,7 @@ public class ControlSwitcher : MonoBehaviour {
     public GameObject Boat1, Boat2, P1Aim, P2Aim;
     public Canvas UI;
     public RawImage P1Ind, P2Ind;
-    public int activePlayer;
+    public int activePlayer, cannonCounter;
     public bool playerFired = false;
     public bool gameIsOver = false;
 
@@ -24,6 +24,7 @@ public class ControlSwitcher : MonoBehaviour {
         activePlayer = 1;
         P2Aim.SetActive(false);
         P1Aim.SetActive(true); 
+		cannonCounter = 0;
 	}
 	
 	// Update is called once per frame
@@ -65,9 +66,11 @@ public class ControlSwitcher : MonoBehaviour {
 
 
         //Switch players every so often
-        if (timeLeft <= 0)
+        if (timeLeft <= 0||cannonCounter>=2)
         {
             timeLeft = timeSwitch;
+			cannonCounter = 0;
+			playerFired = false;
 
             if (activePlayer == 1)
             {

@@ -61,8 +61,8 @@ public class BoatCollision : MonoBehaviour {
             }
             
             Destroy(collision.gameObject);
-            GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().timeLeft = 0;
-            GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().playerFired = false;
+            GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().cannonCounter ++;
+            //GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().playerFired = false;
 
         }
 

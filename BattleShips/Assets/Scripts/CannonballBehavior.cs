@@ -12,7 +12,7 @@ public class CannonballBehavior : MonoBehaviour
     public AudioSource bounceSource;
 
 
-    private Vector3 dir, reflectDir;
+    public Vector3 dir, reflectDir;
     private int bouncesToLive;
     private float basePitch;
 
@@ -23,7 +23,7 @@ public class CannonballBehavior : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        dir = Vector3.forward;
+        //dir = Vector3.forward;
         bouncesToLive = 5;
         speed = 750;
         basePitch = bounceSource.pitch;
@@ -62,8 +62,9 @@ public class CannonballBehavior : MonoBehaviour
         {
             bounceSource.Play();
             Destroy(this.gameObject);
-            GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().timeLeft = 0;
-            GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().playerFired = false;
+            //GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().timeLeft = 0;
+            //GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().playerFired = false;
+			GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().cannonCounter ++;
             bounceSource.pitch = basePitch;
         }
 

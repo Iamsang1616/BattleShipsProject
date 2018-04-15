@@ -277,8 +277,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 73223868}
   m_LocalRotation: {x: 0.7071069, y: 0.0000007674097, z: 0.0000007107638, w: -0.70710677}
-  m_LocalPosition: {x: 923.3876, y: -760.0889, z: 242.36499}
-  m_LocalScale: {x: 1200, y: 20, z: 200.00012}
+  m_LocalPosition: {x: 923, y: -760, z: 388}
+  m_LocalScale: {x: 1469.8265, y: 269.02097, z: 417.88718}
   m_Children: []
   m_Father: {fileID: 1572284634}
   m_RootOrder: 0
@@ -4035,8 +4035,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 334076200}
   m_LocalRotation: {x: -0.0000009818892, y: 0.707107, z: 0.70710665, w: 0.00000071525574}
-  m_LocalPosition: {x: 917.3876, y: -760.0889, z: -962.635}
-  m_LocalScale: {x: 1200.001, y: 20, z: 200.00012}
+  m_LocalPosition: {x: 917, y: -760, z: -1129}
+  m_LocalScale: {x: 1469.8278, y: 269.02097, z: 417.88718}
   m_Children: []
   m_Father: {fileID: 1572284634}
   m_RootOrder: 3
@@ -4274,6 +4274,7 @@ MonoBehaviour:
   P1Ind: {fileID: 1936913406}
   P2Ind: {fileID: 1077197772}
   activePlayer: 1
+  cannonCounter: 0
   playerFired: 0
   gameIsOver: 0
   timer: {fileID: 1802908700}
@@ -4947,8 +4948,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1071581179}
   m_LocalRotation: {x: 0.499999, y: 0.5000011, z: 0.5000002, w: -0.49999982}
-  m_LocalPosition: {x: 1527.386, y: -760.0882, z: -363}
-  m_LocalScale: {x: 1200, y: 20, z: 200}
+  m_LocalPosition: {x: 1681, y: -760, z: -363}
+  m_LocalScale: {x: 1469.8265, y: 269.02097, z: 417.88693}
   m_Children: []
   m_Father: {fileID: 1572284634}
   m_RootOrder: 2
@@ -5319,8 +5320,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 50
   rotateSpeed: 0
-  cannonball: {fileID: 1204185822424472, guid: bfacf26b9f309014c8b3717d2d57b97e, type: 2}
   LaunchPoint: {fileID: 69300489}
+  cannonball: {fileID: 114440724422316194, guid: bfacf26b9f309014c8b3717d2d57b97e,
+    type: 2}
+  cannonball2: {fileID: 114440724422316194, guid: bfacf26b9f309014c8b3717d2d57b97e,
+    type: 2}
   fireSound: {fileID: 8300000, guid: 9bf844caca6e92b4384d7e1f376e9302, type: 3}
   fireSource: {fileID: 596530950}
 --- !u!54 &1208012402
@@ -5447,7 +5451,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -5765,8 +5769,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 50
   rotateSpeed: 0
-  cannonball: {fileID: 1204185822424472, guid: bfacf26b9f309014c8b3717d2d57b97e, type: 2}
   LaunchPoint: {fileID: 2070469744}
+  cannonball: {fileID: 114440724422316194, guid: bfacf26b9f309014c8b3717d2d57b97e,
+    type: 2}
+  cannonball2: {fileID: 114440724422316194, guid: bfacf26b9f309014c8b3717d2d57b97e,
+    type: 2}
   fireSound: {fileID: 8300000, guid: 9bf844caca6e92b4384d7e1f376e9302, type: 3}
   fireSource: {fileID: 596530950}
 --- !u!82 &1256937330
@@ -5836,7 +5843,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -6120,8 +6127,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1410809157}
   m_LocalRotation: {x: 0.5000009, y: -0.49999934, z: -0.49999908, w: -0.5000008}
-  m_LocalPosition: {x: 326, y: -760, z: -361}
-  m_LocalScale: {x: 1200.0005, y: 20, z: 200.00012}
+  m_LocalPosition: {x: 154, y: -760, z: -361}
+  m_LocalScale: {x: 1469.8271, y: 269.02097, z: 417.88718}
   m_Children: []
   m_Father: {fileID: 1572284634}
   m_RootOrder: 1
@@ -11033,7 +11040,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2071794633}
-  m_LocalRotation: {x: -0.00000003765129, y: -0.000000029802322, z: 0.70710725, w: 0.7071064}
+  m_LocalRotation: {x: -0.000000037772423, y: -0.00000002980232, z: 0.7071072, w: 0.70710635}
   m_LocalPosition: {x: -0.00000020393361, y: -1.0800003, z: 0.1449998}
   m_LocalScale: {x: 2.5000002, y: 2.5000002, z: 2.5000012}
   m_Children: []
