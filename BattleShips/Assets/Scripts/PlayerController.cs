@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour {
 	void Start () {
         myRigidBody = GetComponent<Rigidbody>();
         rotateSpeed = 60f;
-        moveSpeed = 70f;
+        moveSpeed = 90f;
 	}
 	
 	// Update is called once per frame
@@ -100,7 +100,7 @@ public class PlayerController : MonoBehaviour {
                 Instantiate(cannonball, LaunchPoint.transform.position, LaunchPoint.transform.rotation);
                 
                 this.GetComponent<PlayerController>().enabled = false;
-                GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().playerFired = true;
+                GameObject.FindGameObjectWithTag("Manager").GetComponent<   ControlSwitcher>().playerFired = true;
 				GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().cannonCounter ++;
                 
                 fireSource.Play();

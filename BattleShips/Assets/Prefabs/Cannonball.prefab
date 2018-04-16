@@ -101,7 +101,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!82 &82272316169756164
 AudioSource:
   m_ObjectHideFlags: 1
@@ -286,7 +286,7 @@ MonoBehaviour:
   speed: 500
   bounceSound: {fileID: 8300000, guid: 3ea7bc16de239b64786b0636fdf34aa3, type: 3}
   bounceSource: {fileID: 82272316169756164}
-  dir: {x: -0.5, y: 0, z: 1}
+  dir: {x: 0, y: 0, z: 1}
   reflectDir: {x: 0, y: 0, z: 0}
 --- !u!135 &135742407109257078
 SphereCollider:

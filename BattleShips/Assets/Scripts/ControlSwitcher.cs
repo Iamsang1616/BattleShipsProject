@@ -19,7 +19,7 @@ public class ControlSwitcher : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        timeSwitch = 10;
+        timeSwitch = 20;
         timeLeft = timeSwitch;
         activePlayer = 1;
         P2Aim.SetActive(false);
