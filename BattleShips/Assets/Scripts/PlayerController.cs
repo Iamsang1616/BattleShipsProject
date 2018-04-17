@@ -56,6 +56,7 @@ public class PlayerController : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.RightShift))
             {
 				cannonball.dir = Vector3.forward;
+                cannonball.bouncesToLive = 5;
                 Instantiate(cannonball, LaunchPoint.transform.position,LaunchPoint.transform.rotation);
 
                 this.GetComponent<PlayerController>().enabled = false;

@@ -5301,6 +5301,7 @@ GameObject:
   - component: {fileID: 1208012404}
   - component: {fileID: 1208012405}
   - component: {fileID: 1208012406}
+  - component: {fileID: 1208012407}
   m_Layer: 0
   m_Name: Boat2
   m_TagString: Boat
@@ -5323,8 +5324,6 @@ MonoBehaviour:
   rotateSpeed: 0
   LaunchPoint: {fileID: 69300489}
   cannonball: {fileID: 114440724422316194, guid: bfacf26b9f309014c8b3717d2d57b97e,
-    type: 2}
-  cannonball2: {fileID: 114440724422316194, guid: bfacf26b9f309014c8b3717d2d57b97e,
     type: 2}
   fireSound: {fileID: 8300000, guid: 9bf844caca6e92b4384d7e1f376e9302, type: 3}
   fireSource: {fileID: 596530950}
@@ -5552,6 +5551,23 @@ TrailRenderer:
     generateLightingData: 0
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
+--- !u!114 &1208012407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1208012400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b159fbb9716582941b491af2954bb134, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LaunchPoint: {fileID: 0}
+  cannonball: {fileID: 114440724422316194, guid: 51c5a31d04781cf4c81989f41eda61bc,
+    type: 2}
+  cannonball2: {fileID: 114440724422316194, guid: 51c5a31d04781cf4c81989f41eda61bc,
+    type: 2}
+  fireSource: {fileID: 0}
 --- !u!1 &1217817084
 GameObject:
   m_ObjectHideFlags: 0
@@ -5694,6 +5710,7 @@ GameObject:
   - component: {fileID: 1256937327}
   - component: {fileID: 1256937330}
   - component: {fileID: 1256937331}
+  - component: {fileID: 1256937332}
   m_Layer: 0
   m_Name: Boat
   m_TagString: Boat
@@ -5772,8 +5789,6 @@ MonoBehaviour:
   rotateSpeed: 0
   LaunchPoint: {fileID: 2070469744}
   cannonball: {fileID: 114440724422316194, guid: bfacf26b9f309014c8b3717d2d57b97e,
-    type: 2}
-  cannonball2: {fileID: 114440724422316194, guid: bfacf26b9f309014c8b3717d2d57b97e,
     type: 2}
   fireSound: {fileID: 8300000, guid: 9bf844caca6e92b4384d7e1f376e9302, type: 3}
   fireSource: {fileID: 596530950}
@@ -5944,6 +5959,23 @@ TrailRenderer:
     generateLightingData: 0
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
+--- !u!114 &1256937332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1256937325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b159fbb9716582941b491af2954bb134, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LaunchPoint: {fileID: 0}
+  cannonball: {fileID: 114440724422316194, guid: 51c5a31d04781cf4c81989f41eda61bc,
+    type: 2}
+  cannonball2: {fileID: 114440724422316194, guid: 51c5a31d04781cf4c81989f41eda61bc,
+    type: 2}
+  fireSource: {fileID: 0}
 --- !u!1 &1261985100
 GameObject:
   m_ObjectHideFlags: 0
