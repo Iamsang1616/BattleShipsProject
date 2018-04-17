@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\SceneSwitcher.cs" />
      <Compile Include="Assets\Scripts\SunRotate.cs" />
      <Compile Include="Assets\Scripts\TitleMovement.cs" />
+     <Compile Include="Assets\Scripts\WallRotate.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

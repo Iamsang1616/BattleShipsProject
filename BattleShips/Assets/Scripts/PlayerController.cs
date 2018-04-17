@@ -64,10 +64,13 @@ public class PlayerController : MonoBehaviour {
                 fireSource.Play();
 			}else if (Input.GetKeyDown(KeyCode.RightControl))
 			{
-				cannonball.dir = Vector3.forward + new Vector3(0.5f, 0, 0);
-				Instantiate(cannonball, LaunchPoint.transform.position+ LaunchPoint.transform.right*20,LaunchPoint.transform.rotation);
-				cannonball2.dir = Vector3.forward + new Vector3(-0.5f, 0, 0);
-				Instantiate(cannonball2, LaunchPoint.transform.position- LaunchPoint.transform.right*20,LaunchPoint.transform.rotation);
+				Vector3 rotation = LaunchPoint.transform.rotation.eulerAngles;
+				rotation.y += 45;
+				Quaternion q = Quaternion.Euler (rotation.x,rotation.y,rotation.z);
+				Instantiate(cannonball, LaunchPoint.transform.position+ LaunchPoint.transform.right*20, q);
+				rotation.y -= 90;
+				q = Quaternion.Euler (rotation.x,rotation.y,rotation.z);
+				Instantiate(cannonball2, LaunchPoint.transform.position- LaunchPoint.transform.right*20, q);
 
 				this.GetComponent<PlayerController>().enabled = false;
 				GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().playerFired = true;
@@ -106,10 +109,13 @@ public class PlayerController : MonoBehaviour {
                 fireSource.Play();
 			}else if (Input.GetKeyDown(KeyCode.E))
 			{
-				cannonball.dir = Vector3.forward + new Vector3(0.5f, 0, 0);
-				Instantiate(cannonball, LaunchPoint.transform.position+ LaunchPoint.transform.right*20,LaunchPoint.transform.rotation);
-				cannonball2.dir = Vector3.forward + new Vector3(-0.5f, 0, 0);
-				Instantiate(cannonball2, LaunchPoint.transform.position- LaunchPoint.transform.right*20,LaunchPoint.transform.rotation);
+				Vector3 rotation = LaunchPoint.transform.rotation.eulerAngles;
+				rotation.y += 45;
+				Quaternion q = Quaternion.Euler (rotation.x,rotation.y,rotation.z);
+				Instantiate(cannonball, LaunchPoint.transform.position+ LaunchPoint.transform.right*20, q);
+				rotation.y -= 90;
+				q = Quaternion.Euler (rotation.x,rotation.y,rotation.z);
+				Instantiate(cannonball2, LaunchPoint.transform.position- LaunchPoint.transform.right*20, q);
 
 				this.GetComponent<PlayerController>().enabled = false;
 				GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().playerFired = true;

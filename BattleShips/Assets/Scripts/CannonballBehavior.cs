@@ -23,7 +23,7 @@ public class CannonballBehavior : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        //dir = Vector3.forward;
+        dir = Vector3.forward;
         bouncesToLive = 5;
         speed = 750;
         basePitch = bounceSource.pitch;
