@@ -13,7 +13,7 @@ public class CannonballBehavior : MonoBehaviour
 
 
     public Vector3 dir, reflectDir;
-    private int bouncesToLive;
+    public int bouncesToLive;
     private float basePitch;
 
     Ray ray;
@@ -24,7 +24,6 @@ public class CannonballBehavior : MonoBehaviour
     void Start()
     {
         dir = Vector3.forward;
-        bouncesToLive = 5;
         speed = 750;
         basePitch = bounceSource.pitch;
     }

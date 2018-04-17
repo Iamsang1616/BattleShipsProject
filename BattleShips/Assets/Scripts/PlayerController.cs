@@ -7,14 +7,14 @@ public class PlayerController : MonoBehaviour {
     public float moveSpeed;
     public float rotateSpeed;
     public GameObject LaunchPoint;
-	public CannonballBehavior cannonball, cannonball2;
+	public CannonballBehavior cannonball;
     public AudioClip fireSound;
     public AudioSource fireSource;
 
     private Rigidbody myRigidBody;
     private float moveAmount;
     private float rotateAmount;
-    
+    private SpreadShotBehavior spreadShot;
 
 
 	// Use this for initialization
@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour {
         myRigidBody = GetComponent<Rigidbody>();
         rotateSpeed = 60f;
         moveSpeed = 90f;
+        spreadShot = GetComponent<SpreadShotBehavior>();
 	}
 	
 	// Update is called once per frame
@@ -64,18 +65,7 @@ public class PlayerController : MonoBehaviour {
                 fireSource.Play();
 			}else if (Input.GetKeyDown(KeyCode.RightControl))
 			{
-				Vector3 rotation = LaunchPoint.transform.rotation.eulerAngles;
-				rotation.y += 45;
-				Quaternion q = Quaternion.Euler (rotation.x,rotation.y,rotation.z);
-				Instantiate(cannonball, LaunchPoint.transform.position+ LaunchPoint.transform.right*20, q);
-				rotation.y -= 90;
-				q = Quaternion.Euler (rotation.x,rotation.y,rotation.z);
-				Instantiate(cannonball2, LaunchPoint.transform.position- LaunchPoint.transform.right*20, q);
-
-				this.GetComponent<PlayerController>().enabled = false;
-				GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().playerFired = true;
-
-				fireSource.Play();
+                spreadShot.Fire();
 			}
         }
         else
@@ -100,6 +90,7 @@ public class PlayerController : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.Q))
 			{
 				cannonball.dir = Vector3.forward;
+                cannonball.bouncesToLive = 5;
                 Instantiate(cannonball, LaunchPoint.transform.position, LaunchPoint.transform.rotation);
                 
                 this.GetComponent<PlayerController>().enabled = false;
@@ -107,20 +98,14 @@ public class PlayerController : MonoBehaviour {
 				GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().cannonCounter ++;
                 
                 fireSource.Play();
-			}else if (Input.GetKeyDown(KeyCode.E))
+
+			}
+            //Alt weapon slot - for now it's the spread shot
+            else if (Input.GetKeyDown(KeyCode.E))
 			{
-				Vector3 rotation = LaunchPoint.transform.rotation.eulerAngles;
-				rotation.y += 45;
-				Quaternion q = Quaternion.Euler (rotation.x,rotation.y,rotation.z);
-				Instantiate(cannonball, LaunchPoint.transform.position+ LaunchPoint.transform.right*20, q);
-				rotation.y -= 90;
-				q = Quaternion.Euler (rotation.x,rotation.y,rotation.z);
-				Instantiate(cannonball2, LaunchPoint.transform.position- LaunchPoint.transform.right*20, q);
 
-				this.GetComponent<PlayerController>().enabled = false;
-				GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().playerFired = true;
+                spreadShot.Fire();
 
-				fireSource.Play();
 			}
         }  
     }
