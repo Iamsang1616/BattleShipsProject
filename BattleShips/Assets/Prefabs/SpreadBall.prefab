@@ -169,7 +169,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -288,7 +288,7 @@ MonoBehaviour:
   bounceSource: {fileID: 82272316169756164}
   dir: {x: 0, y: 0, z: 1}
   reflectDir: {x: 0, y: 0, z: 0}
-  bouncesToLive: 0
+  bouncesToLive: 3
 --- !u!135 &135742407109257078
 SphereCollider:
   m_ObjectHideFlags: 1
