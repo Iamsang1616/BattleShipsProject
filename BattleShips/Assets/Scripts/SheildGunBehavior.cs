@@ -34,5 +34,9 @@ public class SheildGunBehavior : MonoBehaviour {
     {
         Instantiate(shield, LaunchPoint.transform.position, LaunchPoint.transform.rotation);
         fireSource.Play();
+
+
+        GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().playerFired = true;
+        GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().cannonCounter = 2;
     }
 }
