@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour {
     private float moveAmount;
     private float rotateAmount;
     private SpreadShotBehavior spreadShot;
-
+    private SheildGunBehavior shieldShot;
 
 	// Use this for initialization
 	void Start () {
@@ -23,7 +23,8 @@ public class PlayerController : MonoBehaviour {
         rotateSpeed = 60f;
         moveSpeed = 90f;
         spreadShot = GetComponent<SpreadShotBehavior>();
-	}
+        shieldShot = GetComponent<SheildGunBehavior>();
+    }
 	
 	// Update is called once per frame
 	void FixedUpdate () {
@@ -66,7 +67,8 @@ public class PlayerController : MonoBehaviour {
                 fireSource.Play();
 			}else if (Input.GetKeyDown(KeyCode.RightControl))
 			{
-                spreadShot.Fire();
+                //spreadShot.Fire();
+                shieldShot.Fire();
 			}
         }
         else
@@ -95,7 +97,7 @@ public class PlayerController : MonoBehaviour {
                 Instantiate(cannonball, LaunchPoint.transform.position, LaunchPoint.transform.rotation);
                 
                 this.GetComponent<PlayerController>().enabled = false;
-                GameObject.FindGameObjectWithTag("Manager").GetComponent<   ControlSwitcher>().playerFired = true;
+                GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().playerFired = true;
 				GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().cannonCounter ++;
                 
                 fireSource.Play();
@@ -105,9 +107,9 @@ public class PlayerController : MonoBehaviour {
             else if (Input.GetKeyDown(KeyCode.E))
 			{
 
-                spreadShot.Fire();
-
-			}
+                //spreadShot.Fire();
+                shieldShot.Fire();
+            }
         }  
     }
 
