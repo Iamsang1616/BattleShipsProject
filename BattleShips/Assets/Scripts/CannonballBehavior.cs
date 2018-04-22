@@ -55,6 +55,7 @@ public class CannonballBehavior : MonoBehaviour
             bounceSource.Play();
             bouncesToLive--;
         }
+		else bouncesToLive--;
         //If there are still bounces it can make, adjust the bounce angle of the cannonball and also decrease the pitch of the bounce noise as indication
 
         if (bouncesToLive <= 0)
