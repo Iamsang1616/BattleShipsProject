@@ -5107,6 +5107,7 @@ GameObject:
   - component: {fileID: 1208012405}
   - component: {fileID: 1208012406}
   - component: {fileID: 1208012407}
+  - component: {fileID: 1208012408}
   m_Layer: 0
   m_Name: Boat2
   m_TagString: Boat
@@ -5373,6 +5374,21 @@ MonoBehaviour:
   cannonball2: {fileID: 114440724422316194, guid: 51c5a31d04781cf4c81989f41eda61bc,
     type: 2}
   fireSource: {fileID: 0}
+--- !u!114 &1208012408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1208012400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c12d7d7241f08d419f7f8f67a9e7e52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LaunchPoint: {fileID: 0}
+  shield: {fileID: 1886136972664698, guid: 31b52bde426ee154c876a677b77266cc, type: 2}
+  fireSource: {fileID: 0}
+  HasShield: 0
 --- !u!1 &1217817084
 GameObject:
   m_ObjectHideFlags: 0
@@ -5798,6 +5814,7 @@ MonoBehaviour:
   LaunchPoint: {fileID: 0}
   shield: {fileID: 1837469233168818, guid: 882c946c05196ef4ab88ec46a4cc0eda, type: 2}
   fireSource: {fileID: 0}
+  HasShield: 0
 --- !u!1 &1297070489
 GameObject:
   m_ObjectHideFlags: 0
@@ -6647,7 +6664,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: be0dc21e92b6ba646948d2bbd0f212a4, type: 2}
+  - {fileID: 2100000, guid: b7cfd6ed9b2c1b24a89f0c3b8eeacf4b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

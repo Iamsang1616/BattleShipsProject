@@ -6,9 +6,20 @@ public class DestructBehavior : MonoBehaviour {
 
     public int internalHealth;
 
+    public bool isShield;
+
+
 	// Use this for initialization
 	void Start () {
-        internalHealth = 4;
+        if (isShield)
+        {
+            internalHealth = 1;
+        }
+        else
+        {
+            internalHealth = 4;
+        }
+        
 	}
 
 
