@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 82051518185956440}
   - component: {fileID: 96724419940030208}
   - component: {fileID: 114845003978195484}
+  - component: {fileID: 114489747488264982}
   m_Layer: 0
   m_Name: Boat2
   m_TagString: Boat
@@ -767,6 +768,21 @@ MonoBehaviour:
     type: 2}
   fireSound: {fileID: 8300000, guid: 9bf844caca6e92b4384d7e1f376e9302, type: 3}
   fireSource: {fileID: 0}
+--- !u!114 &114489747488264982
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1555209646262120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c12d7d7241f08d419f7f8f67a9e7e52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LaunchPoint: {fileID: 0}
+  shield: {fileID: 1886136972664698, guid: 31b52bde426ee154c876a677b77266cc, type: 2}
+  fireSource: {fileID: 0}
+  HasShield: 0
 --- !u!114 &114498163171682758
 MonoBehaviour:
   m_ObjectHideFlags: 1

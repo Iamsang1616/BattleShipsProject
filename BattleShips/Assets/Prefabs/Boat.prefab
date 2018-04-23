@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 82105347942550502}
   - component: {fileID: 96115069463655422}
   - component: {fileID: 114201448941741982}
+  - component: {fileID: 114061205595495148}
   m_Layer: 0
   m_Name: Boat
   m_TagString: Boat
@@ -737,6 +738,21 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114061205595495148
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1368296602933250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c12d7d7241f08d419f7f8f67a9e7e52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LaunchPoint: {fileID: 0}
+  shield: {fileID: 1837469233168818, guid: 882c946c05196ef4ab88ec46a4cc0eda, type: 2}
+  fireSource: {fileID: 0}
+  HasShield: 0
 --- !u!114 &114201448941741982
 MonoBehaviour:
   m_ObjectHideFlags: 1

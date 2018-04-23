@@ -177,8 +177,8 @@ MonoBehaviour:
     y: 0
     width: 298
     height: 446
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -202,8 +202,8 @@ MonoBehaviour:
     y: 0
     width: 402
     height: 446
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -279,8 +279,8 @@ MonoBehaviour:
     y: 0
     width: 311
     height: 731
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -392,9 +392,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 9efbffff00000000ae2f0000d62f000034300000
+    m_SelectedIDs: f4aa0000
+    m_LastClickedID: 43764
+    m_ExpandedIDs: 142bfeff882cfeff982efeff3c30feffe44bfeff5c4dfeffbe4efeffe050feff5052feff0854feff5055feff3457feff9258feffa063feffea64feffbe67feff1e69feff046bfeff5c6cfeff9e6dfeffcc79feff687cfeffaa7dfeff927ffeff5481feff548dfeff9e95feff1a9dfeff04affeffc4befeff3ac5fefff6cdfeff90e2feffcee4feffd6e7feffdc28fffff6a8ffff86abffff50adffffb0b4ffff22b7ffff40b9ffff70bbfffff0bcffff96c0ffffc8c2ffff22c6ffff80c8fffffacaffff32d3ffffacdaffff92e3ffff9efbffff0000000088600000a46a0000f26d0000986e00007874000042770000d4770000be7a00006a7b0000a8a000003aaa0000d6aa0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -413,7 +413,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
   m_ExpandedScenes:
-  - Scene002
+  - Scene001
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -450,9 +450,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.104126, y: 303.13232, z: -86.148865}
+    m_Target: {x: -34.735474, y: 315.25208, z: -42.94638}
     speed: 2
-    m_Value: {x: 2.104126, y: 303.13232, z: -86.148865}
+    m_Value: {x: -34.735474, y: 315.25208, z: -42.94638}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -476,13 +476,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.28273407, y: 0.48120692, z: -0.16741127, w: -0.812696}
+    m_Target: {x: -0.24885434, y: 0.59578824, z: -0.2012811, w: -0.7366097}
     speed: 2
-    m_Value: {x: -0.2827341, y: 0.48120695, z: -0.16741128, w: -0.81269604}
+    m_Value: {x: -0.24885434, y: 0.59578824, z: -0.2012811, w: -0.7366097}
   m_Size:
-    m_Target: 1183.5543
+    m_Target: 1766.4124
     speed: 2
-    m_Value: 1183.5543
+    m_Value: 1766.4124
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -560,18 +560,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Prefabs
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\GitHub\BattleShipsProject\BattleShips
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 502d0000
-    m_LastClickedID: 11600
+    m_SelectedIDs: 40280000
+    m_LastClickedID: 10304
     m_ExpandedIDs: 000000004028000072280000422900003c2a0000b42a00002e2b0000422e0000522e000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -588,7 +588,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 11}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
