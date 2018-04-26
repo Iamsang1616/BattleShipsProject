@@ -17,6 +17,9 @@ public class PlayerController : MonoBehaviour {
     private SpreadShotBehavior spreadShot;
     private SheildGunBehavior shieldShot;
 
+
+    public int subWeapon;
+
 	// Use this for initialization
 	void Start () {
         myRigidBody = GetComponent<Rigidbody>();
