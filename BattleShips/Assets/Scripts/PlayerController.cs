@@ -70,8 +70,31 @@ public class PlayerController : MonoBehaviour {
                 fireSource.Play();
 			}else if (Input.GetKeyDown(KeyCode.RightControl))
 			{
-                //spreadShot.Fire();
-                shieldShot.Fire();
+
+                subWeapon = PlayerPrefs.GetInt("P2_Weapon");
+
+                switch (subWeapon)
+                {
+                    case 0:
+                        shieldShot.Fire();
+                        break;
+
+                    case 1:
+                        break;
+
+                    case 2:
+
+                        break;
+
+                    case 3:
+                        spreadShot.Fire();
+
+                        break;
+
+                }
+                
+                
+                
 			}
         }
         else
@@ -110,8 +133,29 @@ public class PlayerController : MonoBehaviour {
             else if (Input.GetKeyDown(KeyCode.E))
 			{
 
-                //spreadShot.Fire();
-                shieldShot.Fire();
+                subWeapon = PlayerPrefs.GetInt("P1_Weapon");
+
+                switch (subWeapon)
+                {
+                    case 0:
+                        shieldShot.Fire();
+
+                        break;
+
+                    case 1:
+
+                        break;
+
+                    case 2:
+
+                        break;
+
+                    case 3:
+                        spreadShot.Fire();
+
+                        break;
+
+                }
             }
         }  
     }
