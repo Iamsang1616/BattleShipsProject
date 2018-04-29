@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BoatCollision : MonoBehaviour {
 
@@ -61,7 +62,11 @@ public class BoatCollision : MonoBehaviour {
             }
             
             Destroy(collision.gameObject);
-            GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().cannonCounter ++;
+			if (SceneManager.GetActiveScene ().name == "TrainingMode") {
+				GameObject.FindGameObjectWithTag ("Manager").GetComponent<ControlSwitcherPractice> ().cannonCounter++;
+			} else {
+				GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().cannonCounter ++;
+			}
             //GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().playerFired = false;
 
         }

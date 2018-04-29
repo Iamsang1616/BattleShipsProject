@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class SceneSwitcher : MonoBehaviour {
 
-
 	// Use this for initialization
 	void Start () {
 		
@@ -17,5 +16,8 @@ public class SceneSwitcher : MonoBehaviour {
         {
             SceneManager.LoadScene("Scene001");
         }
+
+		// please execute this line before loading the practice map
+		//PlayerPrefs.SetInt("firstTime", 0);
 	}
 }
