@@ -28,28 +28,28 @@ public class SheildGunBehavior : MonoBehaviour {
 
         //Still doesn't work, the limiting
 	void Update () {
-        if (this.gameObject.name == "Boat")
-        {
-            if (this.transform.parent.Find("Shield"))
-            {
-                HasShield = true;
-            }
-            else
-            {
-                HasShield = false;
-            }
-        }
-        else if (this.gameObject.name == "Boat2")
-        {
-            if (GameObject.Find("Shield2"))
-            {
-                HasShield = true;
-            }
-            else
-            {
-                HasShield = false;
-            }
-        }
+        //if (this.gameObject.name == "Boat")
+        //{
+        //    if (this.transform.parent.Find("Shield"))
+        //    {
+        //        HasShield = true;
+        //    }
+        //    else
+        //    {
+        //        HasShield = false;
+        //    }
+        //}
+        //else if (this.gameObject.name == "Boat2")
+        //{
+        //    if (GameObject.Find("Shield2"))
+        //    {
+        //        HasShield = true;
+        //    }
+        //    else
+        //    {
+        //        HasShield = false;
+        //    }
+        //}
 
     }
 

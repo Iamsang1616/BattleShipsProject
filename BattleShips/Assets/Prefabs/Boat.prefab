@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 96115069463655422}
   - component: {fileID: 114201448941741982}
   - component: {fileID: 114061205595495148}
+  - component: {fileID: 114826207868334078}
   m_Layer: 0
   m_Name: Boat
   m_TagString: Boat
@@ -802,6 +803,20 @@ MonoBehaviour:
   smoke: {fileID: 198209930629332620}
   explodeFrags: {fileID: 1228471580862520, guid: 17c71e135370c8749a10bd23e27b6c2e,
     type: 2}
+--- !u!114 &114826207868334078
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1368296602933250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7d92420b5a6a9d4d97011a59d504fbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LaunchPoint: {fileID: 0}
+  glueBall: {fileID: 114423797480581292, guid: 85e1cb33210e4914fbd452e4bb4abde9, type: 2}
+  fireSource: {fileID: 0}
 --- !u!114 &114831665167571462
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -819,7 +834,8 @@ MonoBehaviour:
   cannonball: {fileID: 114440724422316194, guid: bfacf26b9f309014c8b3717d2d57b97e,
     type: 2}
   fireSound: {fileID: 8300000, guid: 9bf844caca6e92b4384d7e1f376e9302, type: 3}
-  fireSource: {fileID: 0}
+  fireSource: {fileID: 82105347942550502}
+  subWeapon: 0
 --- !u!120 &120042906244221334
 LineRenderer:
   m_ObjectHideFlags: 1

@@ -242,13 +242,17 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\AimLineBehavior.cs" />
     <Compile Include="Assets\Scripts\BoatCollision.cs" />
-    <Compile Include="Assets\Scripts\CannonballBehavior.cs" />
+    <Compile Include="Assets\Scripts\Cannonball Scripts\CannonballBehavior.cs" />
+    <Compile Include="Assets\Scripts\Cannonball Scripts\GlueBallBehavior.cs" />
     <Compile Include="Assets\Scripts\ControlSwitcher.cs" />
+    <Compile Include="Assets\Scripts\ControlSwitcherPractice.cs" />
     <Compile Include="Assets\Scripts\DestructBehavior.cs" />
+    <Compile Include="Assets\Scripts\GlueGunBehavior.cs" />
     <Compile Include="Assets\Scripts\LevelManager.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Portal.cs" />
     <Compile Include="Assets\Scripts\PortalExit.cs" />
+    <Compile Include="Assets\Scripts\PracticeController.cs" />
     <Compile Include="Assets\Scripts\SceneSwitcher.cs" />
     <Compile Include="Assets\Scripts\SheildGunBehavior.cs" />
     <Compile Include="Assets\Scripts\SpreadShotBehavior.cs" />

@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour {
     private float rotateAmount;
     private SpreadShotBehavior spreadShot;
     private SheildGunBehavior shieldShot;
+    private GlueGunBehavior glueShot;
 
 
     public int subWeapon;
@@ -27,6 +28,7 @@ public class PlayerController : MonoBehaviour {
         moveSpeed = 90f;
         spreadShot = GetComponent<SpreadShotBehavior>();
         shieldShot = GetComponent<SheildGunBehavior>();
+        glueShot = GetComponent<GlueGunBehavior>();
     }
 	
 	// Update is called once per frame
@@ -83,7 +85,7 @@ public class PlayerController : MonoBehaviour {
                         break;
 
                     case 2:
-
+                        glueShot.Fire();
                         break;
 
                     case 3:
@@ -147,7 +149,7 @@ public class PlayerController : MonoBehaviour {
                         break;
 
                     case 2:
-
+                        glueShot.Fire();
                         break;
 
                     case 3:

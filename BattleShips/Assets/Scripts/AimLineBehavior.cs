@@ -5,13 +5,12 @@ using UnityEngine;
 public class AimLineBehavior : MonoBehaviour {
 
     private LineRenderer lr;
-    private float reflectDistance;
+  
 
     private void Start()
     {
         lr = GetComponent<LineRenderer>();
         lr.positionCount = 3;
-        reflectDistance = 2f;
     }
 
     private void Update()

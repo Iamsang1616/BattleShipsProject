@@ -80,6 +80,16 @@ public class ControlSwitcher : MonoBehaviour {
                 Boat2.GetComponent<PlayerController>().enabled = true;
                 P2Aim.SetActive(true);
                 P1Aim.SetActive(false);
+
+                //Any walls stickied by 2 become unsticked at the start of their next turn?
+                GameObject[] sticklist = GameObject.FindGameObjectsWithTag("StickyTwo");
+
+                foreach (GameObject g in sticklist)
+                {
+                    g.tag = "Wall";
+                }
+
+
                 activePlayer = 2;
             }
             else
@@ -90,6 +100,15 @@ public class ControlSwitcher : MonoBehaviour {
                 Boat1.GetComponent<PlayerController>().enabled = (true);
                 P2Aim.SetActive(false);
                 P1Aim.SetActive(true);
+
+                //Any walls stickied by 1 become unsticked at the start of their next turn?
+                GameObject[] sticklist = GameObject.FindGameObjectsWithTag("StickyOne");
+
+                foreach (GameObject g in sticklist)
+                {
+                    g.tag = "Wall";
+                }
+
                 activePlayer = 1;
             }
 
