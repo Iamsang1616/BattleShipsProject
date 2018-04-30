@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class SceneSwitcher : MonoBehaviour {
 
+    
+
+
 	// Use this for initialization
 	void Start () {
 		
@@ -14,7 +17,7 @@ public class SceneSwitcher : MonoBehaviour {
 	void Update () {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            SceneManager.LoadScene("Scene001");
+            SceneManager.LoadScene("SubWeaponMenu");
         }
 
 		// please execute this line before loading the practice map

@@ -10,9 +10,11 @@ public class SubWeaponSelect : MonoBehaviour {
     public int player;
     public int currentImage;
     public LevelManager manager;
+    public GameObject InstructionText, ReadyText;
 
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start () {
         icons = GetComponentsInChildren<Image>();
         currentImage = 0;
 
@@ -21,6 +23,8 @@ public class SubWeaponSelect : MonoBehaviour {
 
         manager = FindObjectOfType<LevelManager>();
 
+        
+        ReadyText.SetActive(false);
     }
 	
 	// Update is called once per frame
@@ -39,12 +43,16 @@ public class SubWeaponSelect : MonoBehaviour {
             {
                 PlayerPrefs.SetInt("P1_Weapon", currentImage);
                 manager.P1Ready = true;
+                ReadyText.SetActive(true);
+                InstructionText.SetActive(false);
                 
             }
             if (Input.GetKeyDown(KeyCode.E))
             {
                 PlayerPrefs.SetInt("P1_Weapon", -1);
                 manager.P1Ready = false;
+                ReadyText.SetActive(false);
+                InstructionText.SetActive(true);
             }
         }
         else if (player == 1)
@@ -61,12 +69,15 @@ public class SubWeaponSelect : MonoBehaviour {
             {
                 PlayerPrefs.SetInt("P2_Weapon", currentImage);
                 manager.P2Ready = true;
-
+                ReadyText.SetActive(true);
+                InstructionText.SetActive(false);
             }
             if (Input.GetKeyDown(KeyCode.RightControl))
             {
                 PlayerPrefs.SetInt("P2_Weapon", -1);
                 manager.P2Ready = false;
+                ReadyText.SetActive(false);
+                InstructionText.SetActive(true);
 
             }
         }
