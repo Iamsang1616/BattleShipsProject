@@ -106,10 +106,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 887, y: 342}
-  m_MaxSize: {x: 16012, y: 8042}
+  m_MinSize: {x: 887, y: 492}
+  m_MaxSize: {x: 16012, y: 14042}
   vertical: 0
-  controlID: 26
+  controlID: 74
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -130,10 +130,10 @@ MonoBehaviour:
     y: 0
     width: 1225
     height: 731
-  m_MinSize: {x: 610, y: 342}
-  m_MaxSize: {x: 12010, y: 8042}
+  m_MinSize: {x: 610, y: 492}
+  m_MaxSize: {x: 12010, y: 14042}
   vertical: 1
-  controlID: 27
+  controlID: 88
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_MinSize: {x: 610, y: 221}
   m_MaxSize: {x: 12010, y: 4021}
   vertical: 0
-  controlID: 28
+  controlID: 89
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -253,14 +253,14 @@ MonoBehaviour:
     y: 446
     width: 1225
     height: 285
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 18}
+  m_MinSize: {x: 232, y: 271}
+  m_MaxSize: {x: 10002, y: 10021}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
   - {fileID: 18}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -392,9 +392,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 34890000
-    m_LastClickedID: 35124
-    m_ExpandedIDs: aec5fbff5cdbfbffda0cfcffb40efcffca5cfcff1667fcff666efcffb686fcffd290fcffc894fcff7296fcff90a6fcff06c7fcffe0dbfcfff2dffcff440cfdff5215fdff3634fdff0255fdfffc7ffdffea9cfdffe4a1fdff7ca4fdff0ca6fdffbc33feff7674feff3a2fffffb831ffff985bffff9efbffff00000000b833000014340000843e0000366300009063000080650000da650000726e0000cc6e0000ba70000014710000027300005c7300004a750000a47500005e76000062760000a8760000c67600003e7c00004e890000a8890000
+    m_SelectedIDs: 1c070000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 9efbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -478,7 +478,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.010052069, y: -0.5764255, z: 0.007089762, w: -0.81705713}
     speed: 2
-    m_Value: {x: -0.010052069, y: -0.5764255, z: 0.007089762, w: -0.81705713}
+    m_Value: {x: 0.010052069, y: 0.57642555, z: -0.0070897625, w: 0.81705713}
   m_Size:
     m_Target: 394.90472
     speed: 2
@@ -560,19 +560,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts/Cannonball Scripts
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Cannonball Scripts
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\GitHub\BattleShipsProject\BattleShips
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 54330000
-    m_LastClickedID: 13140
-    m_ExpandedIDs: 000000004a2800007c2800004e290000482a0000c02a00003a2b0000982b0000642e0000742e000000ca9a3bffffff7f
+    m_SelectedIDs: 9e2b0000
+    m_LastClickedID: 11166
+    m_ExpandedIDs: 000000004c2800007e280000502900004c2a0000c42a00003e2b00009e2b00006a2e00007a2e000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -600,7 +600,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000004a2800007c2800004e290000482a0000c02a00003a2b0000642e0000742e0000
+    m_ExpandedIDs: 000000004c2800007e280000502900004c2a0000c42a00003e2b00009e2b00006a2e00007a2e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -625,9 +625,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 647c0000
-    m_LastClickedInstanceID: 31844
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000082c0000d82c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
