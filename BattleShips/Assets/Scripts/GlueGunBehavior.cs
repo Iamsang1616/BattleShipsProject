@@ -36,7 +36,7 @@ public class GlueGunBehavior : MonoBehaviour
         glueBall.bouncesToLive = 1;
         Instantiate(glueBall, LaunchPoint.transform.position, LaunchPoint.transform.rotation);
 
-        this.GetComponent<PlayerController>().enabled = false;
+        
         GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().playerFired = true;
         GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().cannonCounter++;
 

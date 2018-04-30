@@ -40,15 +40,13 @@ public class ControlSwitcher : MonoBehaviour {
         }
         
 
-        if (!playerFired)
+        if (playerFired && timeLeft > 0)
         {
             timeLeft = timeLeft - Time.fixedDeltaTime;
-        }
-        else
-        {
             P1Aim.SetActive(false);
             P2Aim.SetActive(false);
         }
+        
         
         if (Boat1.activeInHierarchy == false)
         {
@@ -66,7 +64,7 @@ public class ControlSwitcher : MonoBehaviour {
 
 
         //Switch players every so often
-        if (timeLeft <= 0||cannonCounter>=2)
+        if (timeLeft <= 0) //||cannonCounter>=2)
         {
             timeLeft = timeSwitch;
 			cannonCounter = 0;

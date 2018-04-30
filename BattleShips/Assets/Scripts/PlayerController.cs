@@ -50,54 +50,69 @@ public class PlayerController : MonoBehaviour {
             {
                 myRigidBody.transform.Rotate(0, +rotateAmount, 0);
             }
-            if (Input.GetKey("up"))
+            if (Input.GetKey("up") && GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().playerFired == true)
             {
                 myRigidBody.transform.Translate(-moveAmount, 0, 0);
             }
-            if (Input.GetKey("down"))
+            if (Input.GetKey("down") && GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().playerFired == true)
             {
                 myRigidBody.transform.Translate(+moveAmount, 0, 0);
             }
             //stop all movement once a player fires a cannonball
             if (Input.GetKeyDown(KeyCode.RightShift))
             {
-				cannonball.dir = Vector3.forward;
-                cannonball.bouncesToLive = 5;
-                Instantiate(cannonball, LaunchPoint.transform.position,LaunchPoint.transform.rotation);
-
-                this.GetComponent<PlayerController>().enabled = false;
-                GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().playerFired = true;
-				GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().cannonCounter ++;
-
-                fireSource.Play();
-			}else if (Input.GetKeyDown(KeyCode.RightControl))
-			{
-
-                subWeapon = PlayerPrefs.GetInt("P2_Weapon");
-
-                switch (subWeapon)
+                if (GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().playerFired == false)
                 {
-                    case 0:
-                        shieldShot.Fire();
-                        break;
+                    cannonball.dir = Vector3.forward;
+                    cannonball.bouncesToLive = 5;
+                    Instantiate(cannonball, LaunchPoint.transform.position, LaunchPoint.transform.rotation);
 
-                    case 1:
-                        break;
+                    
+                    GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().playerFired = true;
+                    GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().cannonCounter++;
 
-                    case 2:
-                        glueShot.Fire();
-                        break;
-
-                    case 3:
-                        spreadShot.Fire();
-
-                        break;
-
+                    fireSource.Play();
                 }
-                
-                
-                
+                else
+                {
+                    GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().timeLeft = 0;
+                    this.GetComponent<PlayerController>().enabled = false;
+                }
 			}
+            else if (Input.GetKeyDown(KeyCode.RightControl))
+			{
+                if (GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().playerFired == false)
+                {
+                    subWeapon = PlayerPrefs.GetInt("P2_Weapon");
+
+                    switch (subWeapon)
+                    {
+                        case 0:
+                            shieldShot.Fire();
+                            break;
+
+                        case 1:
+                            break;
+
+                        case 2:
+                            glueShot.Fire();
+                            break;
+
+                        case 3:
+                            spreadShot.Fire();
+
+                            break;
+
+                    }
+                }
+                else
+                {
+                    GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().timeLeft = 0;
+                    this.GetComponent<PlayerController>().enabled = false;
+                }
+
+
+            }
         }
         else
         {
@@ -109,54 +124,73 @@ public class PlayerController : MonoBehaviour {
             {
                 myRigidBody.transform.Rotate(0, +rotateAmount, 0);
             }
-            if (Input.GetKey(KeyCode.W))
+            if (Input.GetKey(KeyCode.W) && GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().playerFired == true)
             {
                 myRigidBody.transform.Translate(-moveAmount, 0, 0);
             }
-            if (Input.GetKey(KeyCode.S))
+            if (Input.GetKey(KeyCode.S) && GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().playerFired == true)
             {
                 myRigidBody.transform.Translate(+moveAmount, 0, 0);
             }
             //Stop all movement once a player fires
             if (Input.GetKeyDown(KeyCode.Q))
 			{
-				cannonball.dir = Vector3.forward;
-                cannonball.bouncesToLive = 5;
-                Instantiate(cannonball, LaunchPoint.transform.position, LaunchPoint.transform.rotation);
-                
-                this.GetComponent<PlayerController>().enabled = false;
-                GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().playerFired = true;
-				GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().cannonCounter ++;
-                
-                fireSource.Play();
 
-			}
+                if (GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().playerFired == false)
+                {
+                    cannonball.dir = Vector3.forward;
+                    cannonball.bouncesToLive = 5;
+                    Instantiate(cannonball, LaunchPoint.transform.position, LaunchPoint.transform.rotation);
+
+                    GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().playerFired = true;
+                    GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().cannonCounter++;
+
+                    fireSource.Play();
+                }
+
+                //end turn if player presses fire key again
+                else
+                {
+                    GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().timeLeft = 0;
+                    this.GetComponent<PlayerController>().enabled = false;
+
+                }
+
+
+            }
             //Alt weapon slot - for now it's the spread shot
             else if (Input.GetKeyDown(KeyCode.E))
 			{
-
-                subWeapon = PlayerPrefs.GetInt("P1_Weapon");
-
-                switch (subWeapon)
+                if (GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().playerFired == false)
                 {
-                    case 0:
-                        shieldShot.Fire();
+                    subWeapon = PlayerPrefs.GetInt("P1_Weapon");
 
-                        break;
+                    switch (subWeapon)
+                    {
+                        case 0:
+                            shieldShot.Fire();
 
-                    case 1:
+                            break;
 
-                        break;
+                        case 1:
 
-                    case 2:
-                        glueShot.Fire();
-                        break;
+                            break;
 
-                    case 3:
-                        spreadShot.Fire();
+                        case 2:
+                            glueShot.Fire();
+                            break;
 
-                        break;
+                        case 3:
+                            spreadShot.Fire();
 
+                            break;
+
+                    }
+                }
+                else
+                {
+                    GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().timeLeft = 0;
+                    this.GetComponent<PlayerController>().enabled = false;
                 }
             }
         }  

@@ -43,7 +43,6 @@ public class SpreadShotBehavior : MonoBehaviour {
         cannonball2.bouncesToLive = 3;
         Instantiate(cannonball2, LaunchPoint.transform.position - LaunchPoint.transform.right * 20, q);
 
-        this.GetComponent<PlayerController>().enabled = false;
         GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().playerFired = true;
 
         fireSource.Play();
