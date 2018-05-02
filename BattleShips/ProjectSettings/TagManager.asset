@@ -12,6 +12,8 @@ TagManager:
   - Aiming
   - StickyTwo
   - StickyOne
+  - Portal
+  - PortalExit
   layers:
   - Default
   - TransparentFX
