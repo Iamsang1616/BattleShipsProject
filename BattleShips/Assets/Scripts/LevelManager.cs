@@ -29,7 +29,7 @@ void Update () {
             }
             else
             {
-                SceneManager.LoadScene("Scene001");
+                SceneManager.LoadScene("LevelSelect");
             }
         }
 

@@ -14,7 +14,7 @@ public class ControlSwitcher : MonoBehaviour {
     public int activePlayer, cannonCounter;
     public bool playerFired = false;
     public bool gameIsOver = false;
-
+    public PlayerController pc1, pc2;
     public GameObject timer, gameover;
 
 	// Use this for initialization
@@ -25,6 +25,9 @@ public class ControlSwitcher : MonoBehaviour {
         P2Aim.SetActive(false);
         P1Aim.SetActive(true); 
 		cannonCounter = 0;
+
+        pc1 = Boat1.GetComponent<PlayerController>();
+        pc2 = Boat2.GetComponent<PlayerController>();
 	}
 	
 	// Update is called once per frame
@@ -87,6 +90,7 @@ public class ControlSwitcher : MonoBehaviour {
                     g.tag = "Wall";
                 }
 
+                pc1.moveSpeed = 90f;
 
                 activePlayer = 2;
             }
@@ -106,6 +110,8 @@ public class ControlSwitcher : MonoBehaviour {
                 {
                     g.tag = "Wall";
                 }
+
+                pc2.moveSpeed = 90f;
 
                 activePlayer = 1;
             }

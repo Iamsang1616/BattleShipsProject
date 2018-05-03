@@ -2,18 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class LevelSelectScript : MonoBehaviour {
     public Image[] icons;
     public int player;
     public int currentImage;
-    public LevelManager manager;
+    public bool P1Ready;
     public GameObject InstructionText, ReadyText;
 
     // Use this for initialization
     void Start () {
         icons = GetComponentsInChildren<Image>();
         currentImage = 0;
+        P1Ready = false;
 
         ReadyText.SetActive(false);
     }
@@ -28,21 +30,15 @@ public class LevelSelectScript : MonoBehaviour {
         {
             currentImage++;
         }
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            PlayerPrefs.SetInt("P1_Weapon", currentImage);
-            manager.P1Ready = true;
+            
+            P1Ready = true;
             ReadyText.SetActive(true);
             InstructionText.SetActive(false);
 
         }
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            PlayerPrefs.SetInt("P1_Weapon", -1);
-            manager.P1Ready = false;
-            ReadyText.SetActive(false);
-            InstructionText.SetActive(true);
-        }
+        
 
         if (currentImage < 0)
         {
@@ -60,5 +56,31 @@ public class LevelSelectScript : MonoBehaviour {
         }
 
         icons[currentImage].gameObject.SetActive(true);
+
+        if (P1Ready)
+        {
+            switch (currentImage)
+            {
+                case 0:
+                    SceneManager.LoadScene("Scene001");
+                    break;
+                case 1:
+                    SceneManager.LoadScene("Scene002");
+                    break;
+                case 2:
+                    SceneManager.LoadScene("Scene003");
+                    break;
+                case 3:
+                    SceneManager.LoadScene("Scene004");
+                    break;
+                case 4:
+                    SceneManager.LoadScene("Scene005");
+                    break;
+                case 5:
+                    SceneManager.LoadScene("Scene006");
+                    break;
+            }
+        }
+
     }
 }
