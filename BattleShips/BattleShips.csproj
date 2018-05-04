@@ -312,6 +312,9 @@
     <Compile Include="Assets\Scripts\ControlSwitcher.cs" />
     <Compile Include="Assets\Scripts\ControlSwitcherPractice.cs" />
     <Compile Include="Assets\Scripts\DestructBehavior.cs" />
+    <Compile Include="Assets\Scripts\FancyScripts\CursorScript.cs" />
+    <Compile Include="Assets\Scripts\FancyScripts\MoveTextScript.cs" />
+    <Compile Include="Assets\Scripts\FancyScripts\TitleMovement.cs" />
     <Compile Include="Assets\Scripts\GlueGunBehavior.cs" />
     <Compile Include="Assets\Scripts\LevelManager.cs" />
     <Compile Include="Assets\Scripts\LevelSelectScript.cs" />
@@ -324,7 +327,6 @@
     <Compile Include="Assets\Scripts\SpreadShotBehavior.cs" />
     <Compile Include="Assets\Scripts\SubWeaponSelect.cs" />
     <Compile Include="Assets\Scripts\SunRotate.cs" />
-    <Compile Include="Assets\Scripts\TitleMovement.cs" />
     <Compile Include="Assets\Scripts\WallRandom.cs" />
     <Compile Include="Assets\Scripts\WallRotate.cs" />
   </ItemGroup>

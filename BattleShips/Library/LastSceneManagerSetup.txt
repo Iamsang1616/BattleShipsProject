@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/MainMenu 1.unity
+- path: Assets/SubWeaponMenu.unity
   isLoaded: 1
   isActive: 1

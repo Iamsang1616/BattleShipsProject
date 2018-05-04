@@ -19,7 +19,6 @@ public class PlayerController : MonoBehaviour {
     private GlueGunBehavior glueShot;
     private BoostBehavior booster;
 
-
     public int subWeapon;
 
 	// Use this for initialization

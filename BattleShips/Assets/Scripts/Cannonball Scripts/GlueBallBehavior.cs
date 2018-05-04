@@ -10,7 +10,7 @@ public class GlueBallBehavior : MonoBehaviour {
     public float speed;
     public AudioClip bounceSound;
     public AudioSource bounceSource;
-
+    private Renderer rend;
 
     public Vector3 dir;
     public int bouncesToLive;
@@ -22,6 +22,7 @@ public class GlueBallBehavior : MonoBehaviour {
         dir = Vector3.forward;
         speed = 750;
         basePitch = bounceSource.pitch;
+        
     }
 	
 	// Update is called once per frame
@@ -39,6 +40,9 @@ public class GlueBallBehavior : MonoBehaviour {
         {
             Debug.Log("Hit a wall");
 
+            rend = collision.gameObject.GetComponent<Renderer>();
+
+
             //Player 1
             if (GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().activePlayer == 1)
             {
@@ -51,7 +55,8 @@ public class GlueBallBehavior : MonoBehaviour {
             {
                 collision.gameObject.tag = "StickyTwo";
             }
-            
+
+            rend.material.SetColor("_Color", Color.white);
 
 
             bounceSource.pitch -= 0.1f;

@@ -5459,6 +5459,8 @@ MonoBehaviour:
   cannonCounter: 0
   playerFired: 0
   gameIsOver: 0
+  pc1: {fileID: 0}
+  pc2: {fileID: 0}
   timer: {fileID: 1802908700}
   gameover: {fileID: 1164320856}
 --- !u!82 &596530950
@@ -6248,6 +6250,7 @@ GameObject:
   - component: {fileID: 1208012406}
   - component: {fileID: 1208012407}
   - component: {fileID: 1208012408}
+  - component: {fileID: 1208012409}
   m_Layer: 0
   m_Name: Boat2
   m_TagString: Boat
@@ -6549,6 +6552,20 @@ MonoBehaviour:
   shield: {fileID: 1886136972664698, guid: 31b52bde426ee154c876a677b77266cc, type: 2}
   fireSource: {fileID: 0}
   HasShield: 0
+--- !u!114 &1208012409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1208012400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7d92420b5a6a9d4d97011a59d504fbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LaunchPoint: {fileID: 0}
+  glueBall: {fileID: 114423797480581292, guid: 85e1cb33210e4914fbd452e4bb4abde9, type: 2}
+  fireSource: {fileID: 0}
 --- !u!1 &1217817084
 GameObject:
   m_ObjectHideFlags: 0
@@ -6699,6 +6716,7 @@ GameObject:
   - component: {fileID: 1256937331}
   - component: {fileID: 1256937332}
   - component: {fileID: 1256937333}
+  - component: {fileID: 1256937334}
   m_Layer: 0
   m_Name: Boat
   m_TagString: Boat
@@ -6999,6 +7017,20 @@ MonoBehaviour:
   shield: {fileID: 1837469233168818, guid: 882c946c05196ef4ab88ec46a4cc0eda, type: 2}
   fireSource: {fileID: 0}
   HasShield: 0
+--- !u!114 &1256937334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1256937325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7d92420b5a6a9d4d97011a59d504fbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LaunchPoint: {fileID: 0}
+  glueBall: {fileID: 114423797480581292, guid: 85e1cb33210e4914fbd452e4bb4abde9, type: 2}
+  fireSource: {fileID: 0}
 --- !u!1 &1297070489
 GameObject:
   m_ObjectHideFlags: 0

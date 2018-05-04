@@ -109,6 +109,10 @@ public class ControlSwitcher : MonoBehaviour {
                 foreach (GameObject g in sticklist)
                 {
                     g.tag = "Wall";
+
+                    Color cb = g.GetComponent<Renderer>().material.GetColor("_DETAIL_MULX2");
+
+                    g.GetComponent<Renderer>().material.SetColor("_Color", cb);
                 }
 
                 pc2.moveSpeed = 90f;
