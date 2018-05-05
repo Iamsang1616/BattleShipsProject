@@ -109,10 +109,29 @@ public class ControlSwitcher : MonoBehaviour {
                 foreach (GameObject g in sticklist)
                 {
                     g.tag = "Wall";
+                    Renderer rend = g.GetComponent<Renderer>();
+                    Material mat;
 
-                    Color cb = g.GetComponent<Renderer>().material.GetColor("_DETAIL_MULX2");
+                    //if boundary wall
+                    if (g.GetComponent<MeshCollider>() != null)
+                    {
+                        mat = Resources.Load("BoundaryWalls", typeof(Material)) as Material;
 
-                    g.GetComponent<Renderer>().material.SetColor("_Color", cb);
+                    }
+                    //if not breakable anyway
+                    else if (g.GetComponent<DestructBehavior>() == null || !(g.GetComponent<DestructBehavior>().isActiveAndEnabled))
+                    {
+                        mat = Resources.Load("Unbreakable", typeof(Material)) as Material;
+                       
+                    }
+                    //if breakable
+                    else 
+                    {
+                       mat = Resources.Load("Breakable", typeof(Material)) as Material;
+                        
+                    }
+
+                    rend.material = mat;
                 }
 
                 pc2.moveSpeed = 90f;

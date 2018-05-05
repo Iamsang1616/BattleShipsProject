@@ -17,16 +17,17 @@ public class GlueBallBehavior : MonoBehaviour {
     private float basePitch;
 
 
+
     // Use this for initialization
     void Start () {
         dir = Vector3.forward;
         speed = 750;
         basePitch = bounceSource.pitch;
-        
+
     }
-	
-	// Update is called once per frame
-	void FixedUpdate () {
+
+    // Update is called once per frame
+    void FixedUpdate () {
         transform.Translate(dir * speed * Time.deltaTime);
 
 
@@ -35,6 +36,7 @@ public class GlueBallBehavior : MonoBehaviour {
     private void OnCollisionEnter(Collision collision)
     {
 
+        Material glue = Resources.Load("Glue", typeof(Material)) as Material;
 
         if (collision.gameObject.tag == "Wall")
         {
@@ -56,8 +58,7 @@ public class GlueBallBehavior : MonoBehaviour {
                 collision.gameObject.tag = "StickyTwo";
             }
 
-            rend.material.SetColor("_Color", Color.white);
-
+            rend.material = glue;
 
             bounceSource.pitch -= 0.1f;
             bounceSource.Play();
