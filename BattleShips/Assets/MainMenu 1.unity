@@ -680,7 +680,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 0
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
+  m_AllowDynamicResolution: 1
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -1192,13 +1192,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1309628897}
-  m_LocalRotation: {x: -0.0000000108443885, y: -0.7465697, z: 0.6653072, w: -6.241683e-10}
+  m_LocalRotation: {x: -0.000000010833084, y: -0.6533431, z: 0.75706196, w: 7.9664264e-10}
   m_LocalPosition: {x: 560.9, y: 1, z: -543}
   m_LocalScale: {x: 40, y: 1, z: 30}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 96.58801, y: -0.000015258789, z: 180}
+  m_LocalEulerAnglesHint: {x: 81.588005, y: 0, z: 180.00002}
 --- !u!1 &1648858186
 GameObject:
   m_ObjectHideFlags: 0

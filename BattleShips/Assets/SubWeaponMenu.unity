@@ -327,7 +327,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 126520523}
   m_LocalRotation: {x: -0, y: -0, z: -1.5220122e-22, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0021440347}
   m_LocalScale: {x: 0.99998146, y: 0.99998146, z: 0.99998146}
   m_Children: []
   m_Father: {fileID: 838697520}
@@ -335,7 +335,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 226, y: -201}
+  m_AnchoredPosition: {x: 226, y: -175.00024}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &126520525
@@ -369,7 +369,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
-    m_LineSpacing: 2
+    m_LineSpacing: 1
   m_Text: 'Left and Right to switch
 
     RShift to confirm'
@@ -489,7 +489,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 138135014}
   m_LocalRotation: {x: -0, y: -0, z: -1.5220122e-22, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.00067261496}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0014714198}
   m_LocalScale: {x: 1.0001315, y: 1.0001314, z: 1.0001314}
   m_Children: []
   m_Father: {fileID: 838697520}
@@ -497,7 +497,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -193, y: -199.99991}
+  m_AnchoredPosition: {x: -193, y: -174.00015}
   m_SizeDelta: {x: 160.01, y: 134.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &138135016
@@ -531,7 +531,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
-    m_LineSpacing: 2
+    m_LineSpacing: 1
   m_Text: READY!
 --- !u!222 &138135017
 CanvasRenderer:
@@ -1336,8 +1336,8 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
-  m_Depth: -1
+  orthographic size: 10
+  m_Depth: 10
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -1347,7 +1347,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 0
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
+  m_AllowDynamicResolution: 1
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -1857,7 +1857,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8, y: -276}
+  m_AnchoredPosition: {x: 8, y: -231}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &997498173
@@ -2144,7 +2144,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1121807944}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.00067261496}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.0000035, y: 1.0000035, z: 1.0000035}
   m_Children: []
   m_Father: {fileID: 838697520}
@@ -2152,7 +2152,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -190, y: -200.99991}
+  m_AnchoredPosition: {x: -190, y: -175}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1121807946
@@ -2186,7 +2186,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
-    m_LineSpacing: 2
+    m_LineSpacing: 1
   m_Text: 'A and D to switch
 
     Q to confirm'
@@ -2429,7 +2429,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1304523251}
   m_LocalRotation: {x: -0, y: -0, z: -1.5220122e-22, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.00067261496}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0014714198}
   m_LocalScale: {x: 1.0001315, y: 1.0001314, z: 1.0001314}
   m_Children: []
   m_Father: {fileID: 838697520}
@@ -2437,7 +2437,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 230, y: -199.99991}
+  m_AnchoredPosition: {x: 230, y: -174.00015}
   m_SizeDelta: {x: 160.01, y: 134.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1304523253
@@ -2471,7 +2471,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
-    m_LineSpacing: 2
+    m_LineSpacing: 1
   m_Text: READY!
 --- !u!222 &1304523254
 CanvasRenderer:

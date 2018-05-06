@@ -27,6 +27,7 @@ public class CannonballBehavior : MonoBehaviour
 		dir = Vector3.forward;
 		speed = 750;
 		basePitch = bounceSource.pitch;
+        bouncesToLive = 4;
 	}
 
 	// Update is called once per frame
