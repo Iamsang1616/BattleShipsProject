@@ -14,6 +14,7 @@ TagManager:
   - StickyOne
   - Portal
   - PortalExit
+  - Music
   layers:
   - Default
   - TransparentFX

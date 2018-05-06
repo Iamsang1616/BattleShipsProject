@@ -313,6 +313,7 @@
     <Compile Include="Assets\Scripts\ControlSwitcherPractice.cs" />
     <Compile Include="Assets\Scripts\DestructBehavior.cs" />
     <Compile Include="Assets\Scripts\FancyScripts\CursorScript.cs" />
+    <Compile Include="Assets\Scripts\FancyScripts\DontDestroyMusic.cs" />
     <Compile Include="Assets\Scripts\FancyScripts\MoveTextScript.cs" />
     <Compile Include="Assets\Scripts\FancyScripts\TitleMovement.cs" />
     <Compile Include="Assets\Scripts\GlueGunBehavior.cs" />

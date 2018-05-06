@@ -12,6 +12,7 @@ public class SubWeaponSelect : MonoBehaviour {
     public LevelManager manager;
     public GameObject InstructionText, ReadyText;
 
+    public AudioSource select;
 
     // Use this for initialization
     void Start () {
@@ -25,6 +26,8 @@ public class SubWeaponSelect : MonoBehaviour {
 
         
         ReadyText.SetActive(false);
+
+        select = GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
@@ -33,10 +36,12 @@ public class SubWeaponSelect : MonoBehaviour {
         {
             if (Input.GetKeyDown(KeyCode.A))
             {
+                select.Play();
                 currentImage--;
             }
             if (Input.GetKeyDown(KeyCode.D))
             {
+                select.Play();
                 currentImage++;
             }
             if (Input.GetKeyDown(KeyCode.Q))
@@ -59,10 +64,12 @@ public class SubWeaponSelect : MonoBehaviour {
         {
             if (Input.GetKeyDown(KeyCode.LeftArrow))
             {
+                select.Play();
                 currentImage--;
             }
             if (Input.GetKeyDown(KeyCode.RightArrow))
             {
+                select.Play();
                 currentImage++;
             }
             if (Input.GetKeyDown(KeyCode.RightShift))

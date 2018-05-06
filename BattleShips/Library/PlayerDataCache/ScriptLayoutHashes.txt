@@ -104,6 +104,7 @@ f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:UnityStandardAssets.Vehicles.Ball.BallUserControl
 d8d8ef4bc5b3165e0cd6b9720e3b7de9 Assembly-CSharp.dll:.Portal
 6c156248975c65e334daa4cbfba64bd1 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.TimedObjectActivator
+42948b7b59160c263113e54512fb8127 Assembly-CSharp.dll:.BoostBehavior
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 cf455f7a806648c6ed4c7d3e3f8a0e03 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 13bdb7c23815c33a33b37b0ba8dd39be UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -140,7 +141,8 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SceneSwitcher
 322cb40e1e282f28af980cbef7922a90 UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker
 dc07d7ad69b399a46e92c483bf1c04ca UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsTracker
-6358dbffefba65c75f6f2ffe507e18ed Assembly-CSharp.dll:.SubWeaponSelect
+743812c1b0020688d3836147297dc95c Assembly-CSharp.dll:.SubWeaponSelect
+8e8a942aab03fcf5fab18bb7ce598ec6 Assembly-CSharp.dll:.CursorScript
 6e714b24188cddfc9ae1e07d05ed4ddd Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.ParticleSystemDestroyer
 879b3df2ab67cfd00172f75f85a7a583 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.SimpleMouseRotator
 c7790408002dd6c0c359a055959ef579 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Vehicles.Aeroplane.AeroplaneAudio
@@ -173,6 +175,7 @@ cfa93710d56cd4da2a3b2eec27bc1139 Assembly-CSharp-firstpass.dll:UnityStandardAsse
 d037866a59a7b490e69220c4b28f2cd9 Assembly-CSharp.dll:.SheildGunBehavior
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.MobileControlRig
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.ObjectResetter
+5dff85c1ee9e1acb995761cff9661900 Assembly-CSharp.dll:.MoveTextScript
 0f3d832b4eab173f4ea15e0db137bc91 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Vehicles.Car.CarController
 602eb97b20feedd39c051dee7c2e88de Assembly-CSharp-firstpass.dll:UnityStandardAssets.Vehicles.Car.CarAIControl
 b99c43181e1b9a8d844ed98e0c6bd0e1 Assembly-CSharp.dll:.TitleMovement
@@ -238,4 +241,4 @@ c08fd3a401ac620832e06e1b78cb1548 Assembly-CSharp.dll:.PracticeController
 d07a3f884ab46a265f20f52e732d5982 Assembly-CSharp.dll:.ControlSwitcher
 a8f781a3fe982a2a675c5f429daa73a5 Assembly-CSharp.dll:.ControlSwitcherPractice
 0f3d4bb7128a287827d041c696039525 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.AutoMobileShaderSwitch
-42948b7b59160c263113e54512fb8127 Assembly-CSharp.dll:.BoostBehavior
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.DontDestroyMusic
