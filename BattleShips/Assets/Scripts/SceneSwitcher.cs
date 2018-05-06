@@ -19,8 +19,5 @@ public class SceneSwitcher : MonoBehaviour {
         {
             SceneManager.LoadScene("SubWeaponMenu");
         }
-
-		// please execute this line before loading the practice map
-		//PlayerPrefs.SetInt("firstTime", 0);
 	}
 }

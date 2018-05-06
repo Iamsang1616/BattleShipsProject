@@ -25,6 +25,7 @@ void Update () {
         {
             if (TrainingMode)
             {
+				PlayerPrefs.SetInt("firstTime", 0);
                 SceneManager.LoadScene("TrainingMode");
             }
             else
@@ -36,15 +37,11 @@ void Update () {
 
         if (Input.GetKeyDown(KeyCode.T) && !TrainingMode)
         {
-            //please execute this line before loading the practice map
-            //PlayerPrefs.SetInt("firstTime", 0);
             TrainingMode = true;
             TrainText.SetActive(true);
         }
         else if (Input.GetKeyDown(KeyCode.T) && TrainingMode)
         {
-            //please execute this line before loading the practice map
-            //PlayerPrefs.SetInt("firstTime", 1);
             TrainingMode = false;
             TrainText.SetActive(false);
         }

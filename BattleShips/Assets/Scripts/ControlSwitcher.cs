@@ -38,7 +38,10 @@ public class ControlSwitcher : MonoBehaviour {
             if (Input.GetKeyDown("space"))
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            }
+			}else if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
+			{
+				SceneManager.LoadScene("SubWeaponMenu");
+			}
             
         }
         

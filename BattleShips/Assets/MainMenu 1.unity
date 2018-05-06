@@ -1217,7 +1217,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 2
-  m_Text: Battle Ships
+  m_Text: Sink'em
 --- !u!222 &1687793629
 CanvasRenderer:
   m_ObjectHideFlags: 0
