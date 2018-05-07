@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/SubWeaponMenu.unity
+- path: Assets/Scene006.unity
   isLoaded: 1
   isActive: 1

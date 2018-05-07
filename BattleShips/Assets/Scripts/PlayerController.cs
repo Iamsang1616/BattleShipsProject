@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour {
                 if (GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().playerFired == false)
                 {
                     cannonball.dir = Vector3.forward;
-                    cannonball.bouncesToLive = 5;
+                    cannonball.bouncesToLive = 4;
                     Instantiate(cannonball, LaunchPoint.transform.position, LaunchPoint.transform.rotation);
 
                     
@@ -141,7 +141,7 @@ public class PlayerController : MonoBehaviour {
                 if (GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().playerFired == false)
                 {
                     cannonball.dir = Vector3.forward;
-                    cannonball.bouncesToLive = 5;
+                    cannonball.bouncesToLive = 4;
                     Instantiate(cannonball, LaunchPoint.transform.position, LaunchPoint.transform.rotation);
 
                     GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().playerFired = true;

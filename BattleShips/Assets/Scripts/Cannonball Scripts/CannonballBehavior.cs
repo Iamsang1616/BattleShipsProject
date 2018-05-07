@@ -27,7 +27,6 @@ public class CannonballBehavior : MonoBehaviour
 		dir = Vector3.forward;
 		speed = 750;
 		basePitch = bounceSource.pitch;
-        bouncesToLive = 4;
 	}
 
 	// Update is called once per frame
@@ -59,7 +58,7 @@ public class CannonballBehavior : MonoBehaviour
 			bouncesToLive--;
 		//If there are still bounces it can make, adjust the bounce angle of the cannonball and also decrease the pitch of the bounce noise as indication
 
-		if (bouncesToLive <= 0) {
+		if (bouncesToLive < 0) {
 			bounceSource.Play ();
 			Destroy (this.gameObject);
 			//GameObject.FindGameObjectWithTag("Manager").GetComponent<ControlSwitcher>().timeLeft = 0;
